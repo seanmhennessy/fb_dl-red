@@ -1,0 +1,1458 @@
+/*
+Theme Name: Demand Lab
+Theme URI: https://durkangroup.com
+Version: 3.0
+Description: A custom theme.
+Author: seanmhennessy
+Author URI: https://durkangroup.com/
+Template: Divi
+*/
+
+ul.sub-menu {
+	display: none;
+}
+
+body {
+	font-size: 16px;
+}
+/*Utilities*/
+.ma0 {	margin-right: auto !important;	margin-left: auto !important;}
+.w65 {	width: 65%;}
+.w70 {	width: 70%;}
+.w75 {	width: 75%;}
+.w80 {	width: 80%;}
+.w85 {	width: 85%;}
+.w90 {	width: 90%;}
+.w95 {	width: 95%;}
+
+.bold75 {	font-weight: 700;}
+.thin400 {	font-weight: 400;}
+.norm600 {	font-weight: 600;}
+
+.constrain-mw {
+	max-width: 1170px !important;
+}
+
+/*Color*/
+
+.black {	color: #000000;}
+.white {	color: #ffffff;}
+.brand-red {	color: #ea262d}
+.brand-grey {	color: #829da7;}
+.brand-blue {	color: #57928f;}
+.brand-gold {	color: #e2b872;}
+.offwhite {	color: rgba(255,255,255,0.8);}
+
+/* Canvas */ 
+
+#animation_container {
+	position:absolute;
+	margin:auto;
+	left:0;
+	right:0;
+}
+
+
+/*Typography*/
+
+@font-face {
+    font-family: 'Circular';
+    src: url('/wp-content/themes/Fluid/fonts/circularstd-book-webfont.eot');
+    src: url('/wp-content/themes/Fluid/fonts/circularstd-book-webfont.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/Fluid/fonts/circular/circularstd-book-webfont.woff') format('woff'), url('/wp-content/themes/Fluid/fonts/circular/circularstd-book-webfont.ttf') format('truetype'), url('/wp-content/themes/Fluid/fonts/circular/circularstd-book-webfont.svg#circular') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Circular';
+    src: url('/wp-content/themes/Fluid/fonts/circular/circularstd-medium-webfont.eot');
+    src: url('/wp-content/themes/Fluid/fonts/circularstd-medium-webfont.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/Fluid/fonts/circular/circularstd-medium-webfont.woff') format('woff'), url('/wp-content/themes/Fluid/fonts/circular/circularstd-medium-webfont.ttf') format('truetype'), url('/wp-content/themes/Fluid/fonts/circular/circularstd-medium-webfont.svg#circular') format('svg');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Circular';
+    src: url('/wp-content/themes/Fluid/fonts/circular/circularstd-bold-webfont.eot');
+    src: url('/wp-content/themes/Fluid/fonts/circularstd-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/Fluid/fonts/circular/circularstd-bold-webfont.woff') format('woff'), url('/wp-content/themes/Fluid/fonts/circular/circularstd-bold-webfont.ttf') format('truetype'), url('/wp-content/themes/Fluid/fonts/circular/circularstd-bold-webfont.svg#circular') format('svg');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+  font-family: 'NeueHaasGrotesk Text';
+  src: url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-55Roman-Web.eot');
+  src: url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-55Roman-Web.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-55Roman-Web.woff2') format('woff2'), url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-55Roman-Web.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'NeueHaasGrotesk Text';
+  src: url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-65Medium-Web.eot');
+  src: url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-65Medium-Web.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-65Medium-Web.woff2') format('woff2'), url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-65Medium-Web.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'NeueHaasGrotesk Text';
+  src: url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-75Bold-Web.eot');
+  src: url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-75Bold-Web.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-75Bold-Web.woff2') format('woff2'), url('/wp-content/themes/Fluid/fonts/neuehaasgrotesk-text/NeueHaasGrotTextRound-75Bold-Web.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.neue {
+	font-family: 'NeueHaasGrotesk Text', 'Roboto', Arial, sans-serif;
+}
+
+h1.circ,
+h2.circ,
+h3.circ,
+h4.circ,
+h5.circ,
+h6.circ {
+	font-family: "Circular", Arial, sans-serif,
+}
+#et-top-navigation.et_toggle_fullscreen_menu::before {
+	z-index: 99999999999;
+}
+
+.js-no-scroll {
+	overflow-y: hidden;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+.fluid-page-container {
+	height:100%;
+	width: 100%;
+	overflow: auto;
+}
+
+.fluid-header {
+	color: #c8c8c8;
+/*	height: 80px;*/
+	padding: 1%;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999999999;
+	display: none;
+	align-content: flex-start;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.fluid-header.headingdown {
+	background-color: #ffffff;
+}
+
+.fluid-logo-container {
+ 	order: 2;
+ 	width:50%;
+ 	position: relative;
+ 	display: block;
+}
+
+.fluid-logo-container a {
+	display: block;
+	text-align: right;
+}
+
+.fluid-toggle-container {
+	order: 1;
+	width: 50%;
+	position: relative;
+	display: block;
+	align-self: center;
+}
+
+#fluid-menu-takeover {
+	background: #ffffff;
+	position: fixed;
+	overflow-y: hidden;
+	display: block;
+	z-index: 999999999;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	height: 100%;
+	width: 100%;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s ease-in-out;
+		-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	/*-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	-webkit-transition-delay: 0s;
+					transition-delay: 0s;*/
+}
+
+.is--active #fluid-menu-takeover {
+	opacity: 1;
+	visibility: visible;
+}
+
+.isnt--active #fluid-menu-takeover {
+	/*background: transparent;*/
+	opacity: 0;
+	visibility: hidden;
+/* 	height: 100%;
+	width: 100%; */
+	z-index: -1;
+/* 	transition: opacity 1s ease-in-out;
+		-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out; */
+}
+
+#fluid-menu-takeover ul {
+	position: absolute;
+	left: 10%;
+	line-height: 1.5;
+	width: 100%;
+	top: 100px;
+	/* opacity: 0; */
+	transition: opacity .5s ease-in-out;
+}
+
+#fluid-menu-logo {
+/*	display: block;
+	position: relative;*/
+}
+
+#aux-fluid-menu-logo {
+	opacity: 0;
+	transition: opacity .6s ease-in-out;
+}
+
+/*.is--active #aux-fluid-menu-logo,
+.headingdown #aux-fluid-menu-logo {
+	opacity: 1;
+	transition: opacity .35s ease-out;
+}*/
+
+.is--active #fluid-menu-takeover ul{
+	/* opacity: 1; */
+	transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	transition-delay: .35s;
+}
+
+#fluid-menu-takeover ul li a {
+	font-size: 3.25em;
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	color: #c8c8c8;
+	/* opacity: 0; */
+	border: none;
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+			-webkit-transition-delay: 0s;
+					transition-delay: 0s;
+}
+
+#fluid-menu-takeover ul li a:hover {
+	color: #000000;
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+}
+
+.is--active #fluid-menu-takeover ul li a {
+	/* opacity: 1; */
+/* -webkit-transition-delay: 0.5s;
+					transition-delay: 0.5s; */
+}
+
+#fluid-menu-toggle {
+	height: 25px;
+	width: 30px;
+	position: absolute;
+	margin: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	z-index: 9999999999999999999;
+	top: 0;
+}
+
+#fluid-menu-toggle span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background-color: #FFFFFF;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.is--active #fluid-menu-toggle span,
+.headingdown #fluid-menu-toggle span {
+	background-color: #000000;
+}
+
+#fluid-menu-toggle span:nth-child(1) {
+	top: 0px;
+}
+
+#fluid-menu-toggle span:nth-child(2),#fluid-menu-toggle span:nth-child(3) {
+	top: 10px;
+}
+
+#fluid-menu-toggle span:nth-child(4) {
+	top: 20px;
+}
+
+.is--active #fluid-menu-toggle span:nth-child(1) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+
+.is--active #fluid-menu-toggle span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.is--active #fluid-menu-toggle span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.is--active #fluid-menu-toggle span:nth-child(4) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+
+#homepage-aspot-fullscreen > div.et_pb_fullwidth_header_container.left > div > div > h1::before {
+	content: "";
+	background-color: rgba(177, 177, 177, 0.5);
+	border-bottom: 1px rgba(177, 177, 177, 0.5) solid;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	display: block;
+	top: 49%;
+	left: -105%;
+}
+
+.home-bspot {
+	text-align: center;
+}
+
+.home-bspot-head {
+	text-transform: uppercase;
+}
+
+/*Icons*/
+
+.et-social-facebook a.icon::before {
+	font-family: 'FontAwesome' !important;
+	content: '\f230';
+}
+
+.et-social-twitter a.icon::before {
+	font-family: 'FontAwesome'  !important;
+	content: '\f099';
+}
+
+.et-social-google-plus a.icon::before {
+	font-family: 'FontAwesome'  !important;
+	content: '\f0d5';
+}
+
+
+#et_search_icon::before {
+	font-family: 'FontAwesome' !important;
+	content: '\f002';
+}
+
+.menu-email::before {
+	font-family: 'FontAwesome'  !important;
+	font-size: 1.5em;
+	content: '\f0e0';
+	padding-right: 15px;
+	vertical-align: baseline;
+}
+
+.menu-phone::before {
+	font-family: 'FontAwesome'  !important;
+	font-size: 1.5em;
+	content: '\f095';
+	padding-right: 15px;
+	vertical-align: baseline;
+}
+
+.menu-directions::before {
+	font-family: 'FontAwesome'  !important;
+	font-size: 1.5em;
+	content: '\f041';
+	padding-right: 15px;
+	vertical-align: baseline;
+}
+
+.contact-link.phone {
+	color: #777777 !important;
+	cursor: text;
+}
+
+.contact-link::before {
+	padding-right: 10px !important;
+	font-size: 14px !important;
+	vertical-align: top !important;
+}
+
+.contact-link.phone::before {
+	font-family: 'FontAwesome'  !important;
+	content: '\f095';
+	color: #777777 !important;
+}
+
+.contact-link.mobile-phone::before {
+	font-family:  'FontAwesome'  !important;
+	content: '\f098';
+}
+
+.contact-link.email::before {
+	font-family: 'FontAwesome'  !important;
+	content: '\f0e0';
+}
+
+
+.fullwidth-cta::after {
+	content: "\E89E";
+  font-family: "Material Icons";
+  font-size: 22px;
+  display: inline;
+  vertical-align: bottom;
+  padding-left: 1%;
+  font-weight: normal !important;
+}
+
+/*Motion*/
+
+/*Footer*/
+
+#footer-widgets .footer-widget li::before {
+	display: none !important;
+	padding: 0 !important;
+}
+
+#text-2 {
+	margin-bottom: 2%;
+}
+#footer-about-blurb {
+	width: 45%;
+}
+
+.insights-module a.more-link {
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+	#footer-about-blurb {
+		width: 100%;
+	}
+}
+
+
+
+
+/* Gravity Forms */
+
+.gform_wrapper {
+	text-align: left;
+}
+
+.gform_wrapper ul {
+	margin-left: 0;
+}
+
+.gform_wrapper ul li {
+	list-style-type: none;
+	margin: 16px 0 0;
+}
+
+.gform_wrapper .gform_title,
+.gform_wrapper .gsection_title {
+	font-size: 18px;
+}
+
+.gform_wrapper .gform_fields {
+	padding: 0;
+}
+
+.gform_wrapper .gfield {
+	clear: both;
+}
+
+.gform_wrapper .gfield_label {
+	clear: both;
+	display: inline-block;
+	font-weight: 600;
+	margin: 18px 0;
+}
+
+@media only screen and (min-width: 810px) {
+	.gform_wrapper .gfield_label {
+		margin-top: 13px;
+	}
+}
+
+.gform_wrapper .gfield_description {
+	font-size: 14px;
+}
+
+.gform_wrapper .gfield_required {
+	color: #f00;
+	padding-left: 2px;
+}
+
+.gform_wrapper .field_description_above .gfield_description {
+	margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 810px) {
+	.gform_wrapper .field_description_above .gfield_description {
+		margin-bottom: 13px;
+	}
+}
+
+.gform_wrapper .ginput_container .small {
+	width: 25%;
+}
+
+.gform_wrapper .ginput_container .medium {
+	width: 50%;
+}
+
+.gform_wrapper .ginput_container .large {
+	width: 100%;
+}
+
+.gform_wrapper .gform_footer {
+	margin-top: 16px;
+}
+
+/* Gravity Forms Progress Bar
+--------------------------------------------- */
+.gform_wrapper .gf_progressbar_wrapper {
+	clear: both;
+	width: 100%;
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: 1px dotted #a4a5a5;
+	margin: 0 0 8px;
+	padding: 0 0 8px;
+}
+
+@media only screen and (min-width: 810px) {
+	.gform_wrapper .gf_progressbar_wrapper {
+		margin-bottom: 13px;
+		padding-bottom: 13px;
+	}
+}
+
+.gform_wrapper .gf_progressbar_wrapper .gf_progressbar_title {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.gform_wrapper .gf_progressbar {
+	background: #a4a5a5;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+.gform_wrapper .gf_progressbar_percentage {
+	font-size: 14px;
+	height: 20px;
+	text-align: right;
+	text-shadow: 0 1px 1px rgba(28, 30, 31, 0.5);
+}
+
+.gform_wrapper .gf_progressbar_percentage span {
+	display: block;
+	float: right;
+	margin: 0 5px;
+	width: auto;
+}
+
+.gform_wrapper .gf_progressbar_percentage.percentbar_0 span {
+	color: #a4a5a5;
+	text-shadow: none;
+}
+
+.gform_wrapper .percentbar_blue {
+	background-color: #0072bc;
+	color: #fff;
+}
+
+.gform_wrapper .percentbar_gray {
+	background-color: #666;
+	color: #fff;
+}
+
+.gform_wrapper .percentbar_green {
+	background-color: #94dc21;
+	color: #fff;
+}
+
+.gform_wrapper .percentbar_orange {
+	background-color: #dc7021;
+	color: #fff;
+}
+
+.gform_wrapper .percentbar_red {
+	background-color: #dc2521;
+	color: #fff;
+}
+
+.gform_wrapper .gf_page_steps {
+	clear: both;
+	width: 100%;
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: 1px dotted #a4a5a5;
+	margin: 0 0 8px;
+	padding: 0 0 8px;
+}
+
+@media only screen and (min-width: 810px) {
+	.gform_wrapper .gf_page_steps {
+		margin-bottom: 13px;
+		padding-bottom: 13px;
+	}
+}
+
+.gform_wrapper .gf_step {
+	display: inline-block;
+	height: 18px;
+	line-height: 1.25;
+	margin: 0 16px 10px 0;
+	opacity: 0.2;
+}
+
+.gform_wrapper .gf_step span {
+	vertical-align: top;
+}
+
+.gform_wrapper .gf_step_active {
+	opacity: 1;
+}
+
+.gform_wrapper .gf_step_number {
+	font-size: 18px;
+}
+
+.gform_wrapper .gf_step_clear {
+	clear: both;
+	width: 100%;
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Gravity Forms Textareas
+--------------------------------------------- */
+.gform_wrapper textarea {
+	resize: none;
+}
+
+.gform_wrapper textarea.small, .gform_wrapper textarea.medium {
+	width: 100%;
+}
+
+.gform_wrapper textarea.small {
+	height: 5em;
+}
+
+.gform_wrapper textarea.medium {
+	height: 9.375em;
+}
+
+.gform_wrapper textarea.large {
+	height: 15.625em;
+}
+
+/* Gravity Forms Select
+--------------------------------------------- */
+.gform_wrapper select {
+	padding: 10px;
+}
+
+.gform_wrapper .ginput_container_multiselect select {
+	background: #fff;
+	padding: 0;
+}
+
+.gform_wrapper .ginput_container_multiselect select option {
+	padding: 5px;
+}
+
+/* Gravity Forms Numbers
+--------------------------------------------- */
+.gform_wrapper .ginput_container_number input {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+/* Gravity Forms Checkboxes and Radios
+--------------------------------------------- */
+.gform_wrapper .gfield_checkbox,
+.gform_wrapper .gfield_radio {
+	margin-top: 0;
+}
+
+.gform_wrapper .gfield_checkbox li,
+.gform_wrapper .gfield_radio li {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	line-height: 1;
+	margin: 0 0 8px;
+}
+
+.gform_wrapper .gfield_checkbox li input,
+.gform_wrapper .gfield_radio li input {
+	margin-right: 8px;
+}
+
+/* Gravity Forms Section Breaks and HTML
+--------------------------------------------- */
+.gform_wrapper .gfield_html,
+.gform_wrapper .gsection {
+	clear: both;
+	width: 100%;
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: 1px dotted #a4a5a5;
+	margin: 0 0 8px;
+	padding: 0 0 8px;
+}
+
+@media only screen and (min-width: 810px) {
+	.gform_wrapper .gfield_html,
+	.gform_wrapper .gsection {
+		margin-bottom: 13px;
+		padding-bottom: 13px;
+	}
+}
+
+.gform_wrapper .gfield_html {
+	border-bottom: 0 none;
+}
+
+/* Gravity Forms Names, Address, etc. (Complex)
+--------------------------------------------- */
+.gform_wrapper .ginput_complex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.gform_wrapper .ginput_complex.ginput_container_address {
+	-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+}
+
+.gform_wrapper .ginput_complex span {
+	-webkit-flex-shrink: 1;
+	-ms-flex-negative: 1;
+	flex-shrink: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	margin-right: 1.6949152542%;
+}
+
+.gform_wrapper .ginput_complex span:last-of-type {
+	margin-right: 0;
+}
+
+.gform_wrapper .ginput_complex .name_prefix_select {
+	-webkit-box-flex: 0;
+	-webkit-flex-grow: 0;
+	-moz-box-flex: 0;
+	-ms-flex-positive: 0;
+	flex-grow: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+}
+
+.gform_wrapper .ginput_complex .ginput_full {
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.gform_wrapper .ginput_complex .ginput_left {
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	width: 48.5714285714%;
+	float: left;
+	margin-right: 2.8571428571%;
+}
+
+.gform_wrapper .ginput_complex .ginput_right {
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	width: 48.5714285714%;
+	float: right;
+	margin-right: 0;
+}
+
+/* Gravity Forms Dates
+--------------------------------------------- */
+.gform_wrapper .datepicker_with_icon {
+	margin-right: 10px;
+}
+
+.gform_wrapper .clear-multi {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.gform_wrapper .clear-multi div {
+	margin-right: 1.6949152542%;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.gform_wrapper .clear-multi div:last-child {
+	margin-right: 0;
+}
+
+/* Gravity Forms Datepicker
+--------------------------------------------- */
+.ui-datepicker {
+	width: 216px;
+	height: auto;
+	margin: 5px auto 0;
+	font-size: 13px;
+	z-index: 9999;
+}
+
+.ui-datepicker a {
+	text-decoration: none;
+}
+
+.ui-datepicker thead {
+	background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f4), to(#f3f3f4));
+	background: -webkit-linear-gradient(top, #f3f3f4 0%, #f3f3f4 100%);
+	background: linear-gradient(to bottom, #f3f3f4 0%, #f3f3f4 100%);
+	border-bottom: 1px solid #ccc;
+}
+
+.ui-datepicker th {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 6pt;
+	padding: 5px 0;
+	color: #666;
+	text-shadow: 1px 0 0 #fff;
+}
+
+.ui-datepicker tbody td {
+	padding: 0;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.ui-datepicker tbody tr {
+	border-bottom: 1px solid #ccc;
+}
+
+.ui-datepicker tbody tr:last-child {
+	border-bottom: 0 none;
+}
+
+.ui-datepicker td a,
+.ui-datepicker td span {
+	color: #666;
+	display: inline-block;
+	font-weight: 600;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #fff;
+	width: 30px;
+}
+
+.ui-datepicker-header {
+	background-color: #666;
+	color: #e0e0e0;
+	font-weight: bold;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+					box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+	line-height: 30px;
+	min-height: 30px;
+	border-width: 1px 0 0;
+	border-style: solid;
+	border-color: #666;
+}
+
+.ui-datepicker-title {
+	text-align: center;
+}
+
+.ui-datepicker-title select {
+	-webkit-background-size: 10px 8px;
+	background-size: 10px 8px;
+	margin-top: 2.5%;
+	padding: 0;
+	width: 32%;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	cursor: pointer;
+	background-image: url(images/gf-arrow.png);
+	background-repeat: no-repeat;
+	line-height: 600%;
+	overflow: hidden;
+}
+
+.ui-datepicker-prev {
+	float: left;
+	background-position: center -30px;
+}
+
+.ui-datepicker-next {
+	float: right;
+	background-position: center 0px;
+}
+
+.ui-datepicker-calendar {
+	margin-bottom: 0;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+	background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f4), to(#e0e0e0));
+	background: -webkit-linear-gradient(top, #f3f3f4 0%, #e0e0e0 100%);
+	background: linear-gradient(to bottom, #f3f3f4 0%, #e0e0e0 100%);
+	-webkit-box-shadow: inset 1px 1px 0px 0px rgba(243, 243, 244, 0.5);
+	box-shadow: inset 1px 1px 0px 0px rgba(243, 243, 244, 0.5);
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+	background: #fff;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+	background: #fff2aa;
+	border: 1px solid #dc2521;
+	color: #666;
+	position: relative;
+	margin: -1px;
+}
+
+.ui-datepicker-calendar td:first-child .ui-state-active {
+	margin-left: 0;
+	width: 29px;
+}
+
+.ui-datepicker-calendar td:last-child .ui-state-active {
+	margin-right: 0;
+	width: 29px;
+}
+
+.ui-datepicker-calendar tr:last-child .ui-state-active {
+	height: 29px;
+	margin-bottom: 0;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+	background: #fff;
+	color: #a4a5a5;
+}
+
+.ui-datepicker-unselectable.ui-state-disabled {
+	background-color: #f3f3f4;
+}
+
+/* Gravity Forms Uploads
+--------------------------------------------- */
+.gform_wrapper .gform_drop_area {
+	border: 2px dashed #ddd;
+	color: #aaa;
+	margin-bottom: 10px;
+	padding: 25px;
+	text-align: center;
+}
+
+/* Gravity Forms Tables
+--------------------------------------------- */
+.gform_wrapper table {
+	border: 0 none;
+	margin: 0;
+}
+
+.gform_wrapper table td {
+	border: 0 none;
+	padding: 0;
+}
+
+.gform_wrapper tbody {
+	border: 0 none;
+}
+
+.gform_wrapper .gfield_list_icons {
+	padding-left: 10px;
+}
+
+/* Gravity Forms Pricing
+--------------------------------------------- */
+.gform_wrapper .gfield_price .ginput_container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.gform_wrapper .gfield_price .ginput_container input {
+	-webkit-flex-shrink: 1;
+	-ms-flex-negative: 1;
+	flex-shrink: 1;
+	width: auto;
+}
+
+.gform_wrapper .gfield_price .ginput_container span {
+	margin-right: 1.6949152542%;
+}
+
+.gform_wrapper .ginput_product_price {
+	color: #94dc21;
+}
+
+/* Gravity Forms Errors
+--------------------------------------------- */
+.gform_wrapper .gfield_error {
+	background: #fff;
+	border-left: 5px solid #cc0000;
+	padding: 15px 15px 10px;
+}
+
+.gform_wrapper .gfield_error > label {
+	color: #ff3333;
+}
+
+.gform_wrapper .gfield_error input[type="color"],
+.gform_wrapper .gfield_error input[type="date"],
+.gform_wrapper .gfield_error input[type="datetime"],
+.gform_wrapper .gfield_error input[type="datetime-local"],
+.gform_wrapper .gfield_error input[type="email"],
+.gform_wrapper .gfield_error input[type="month"],
+.gform_wrapper .gfield_error input[type="number"],
+.gform_wrapper .gfield_error input[type="password"],
+.gform_wrapper .gfield_error input[type="search"],
+.gform_wrapper .gfield_error input[type="tel"],
+.gform_wrapper .gfield_error input[type="text"],
+.gform_wrapper .gfield_error input[type="time"],
+.gform_wrapper .gfield_error input[type="url"],
+.gform_wrapper .gfield_error input[type="week"],
+.gform_wrapper .gfield_error input,
+.gform_wrapper .gfield_error select,
+.gform_wrapper .gfield_error textarea {
+	border-color: #cc0000;
+}
+
+.gform_wrapper .gfield_error input[type="color"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="date"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="datetime"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="datetime-local"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="email"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="month"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="number"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="password"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="search"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="tel"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="text"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="time"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="url"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input[type="week"]::-webkit-input-placeholder,
+.gform_wrapper .gfield_error input::-webkit-input-placeholder,
+.gform_wrapper .gfield_error select::-webkit-input-placeholder,
+.gform_wrapper .gfield_error textarea::-webkit-input-placeholder {
+	color: #cc0000;
+	opacity: 0.7;
+}
+
+.gform_wrapper .gfield_error input[type="color"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="date"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="datetime"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="datetime-local"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="email"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="month"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="number"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="password"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="search"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="tel"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="text"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="time"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="url"]:-moz-placeholder,
+.gform_wrapper .gfield_error input[type="week"]:-moz-placeholder,
+.gform_wrapper .gfield_error input:-moz-placeholder,
+.gform_wrapper .gfield_error select:-moz-placeholder,
+.gform_wrapper .gfield_error textarea:-moz-placeholder {
+	color: #cc0000;
+	opacity: 0.7;
+}
+
+.gform_wrapper .gfield_error input[type="color"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="date"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="datetime"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="datetime-local"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="email"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="month"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="number"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="password"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="search"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="tel"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="text"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="time"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="url"]::-moz-placeholder,
+.gform_wrapper .gfield_error input[type="week"]::-moz-placeholder,
+.gform_wrapper .gfield_error input::-moz-placeholder,
+.gform_wrapper .gfield_error select::-moz-placeholder,
+.gform_wrapper .gfield_error textarea::-moz-placeholder {
+	color: #cc0000;
+	opacity: 0.7;
+}
+
+.gform_wrapper .gfield_error input[type="color"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="date"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="datetime"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="datetime-local"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="email"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="month"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="number"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="password"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="search"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="tel"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="text"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="time"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="url"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input[type="week"]:-ms-input-placeholder,
+.gform_wrapper .gfield_error input:-ms-input-placeholder,
+.gform_wrapper .gfield_error select:-ms-input-placeholder,
+.gform_wrapper .gfield_error textarea:-ms-input-placeholder {
+	color: #cc0000;
+	opacity: 0.7;
+}
+
+.gform_wrapper .gfield_error input[type="color"]::placeholder,
+.gform_wrapper .gfield_error input[type="date"]::placeholder,
+.gform_wrapper .gfield_error input[type="datetime"]::placeholder,
+.gform_wrapper .gfield_error input[type="datetime-local"]::placeholder,
+.gform_wrapper .gfield_error input[type="email"]::placeholder,
+.gform_wrapper .gfield_error input[type="month"]::placeholder,
+.gform_wrapper .gfield_error input[type="number"]::placeholder,
+.gform_wrapper .gfield_error input[type="password"]::placeholder,
+.gform_wrapper .gfield_error input[type="search"]::placeholder,
+.gform_wrapper .gfield_error input[type="tel"]::placeholder,
+.gform_wrapper .gfield_error input[type="text"]::placeholder,
+.gform_wrapper .gfield_error input[type="time"]::placeholder,
+.gform_wrapper .gfield_error input[type="url"]::placeholder,
+.gform_wrapper .gfield_error input[type="week"]::placeholder,
+.gform_wrapper .gfield_error input::placeholder,
+.gform_wrapper .gfield_error select::placeholder,
+.gform_wrapper .gfield_error textarea::placeholder {
+	color: #cc0000;
+	opacity: 0.7;
+}
+
+/* Gravity Forms Hidden
+--------------------------------------------- */
+.gform_wrapper .hidden_label .gfield_label {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+
+.gform_wrapper .gform_validation_container {
+	display: none;
+	position: absolute;
+	left: -9000px;
+}
+
+
+/* Fluid Styles Large Desktop And Above */
+@media all and (min-width: 1405px) {}
+
+/* Fluid Styles Standard Desktop Only */
+@media all and (min-width: 1100px) and (max-width: 1405px) {}
+
+/* Fluid Styles Standard Desktop Only */
+@media all and (min-width: 981px) and (max-width: 1405px) {}
+
+/* Fluid Styles Desktop Only */
+@media all and (min-width: 981px) {}
+
+/* Fluid Styles 981px - 1100px */
+@media all and (min-width: 981px) and (max-width: 1100px) {}
+
+/* Fluid Styles Tablet And Below */
+@media all and (max-width: 980px) {}
+
+/* Fluid Styles 782px */
+@media screen and (max-width: 782px) {}
+
+/* Fluid Styles Smartphone Only */
+@media all and (max-width: 767px) {
+	.w65,
+	.w70,
+	.w75,
+	.w80,
+	.w85,
+	.w90,
+	.w95 {	width: 100% !important}
+
+/*	#fluid-menu-logo {
+		width: 25% !important;
+	}*/
+}
+
+/* Fluid Styles Smartphone Portrait */
+@media all and (max-width: 479px) {}
+
+.gwd-div-11cp {
+    position: absolute;
+    width: 197px;
+    height: 178px;
+    left: 70%;
+    top: -335px;
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+.gwd-div-hv44 {
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+}
+.gwd-div-11cp::before {
+    width: inherit;
+    height: inherit;
+    content: "";
+    position: absolute;
+    left: 0px;
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    background-color: inherit;
+}
+.gwd-div-11cp::after {
+    width: inherit;
+    height: inherit;
+    content: "";
+    position: absolute;
+    left: 0px;
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    background-color: inherit;
+}
+.gwd-div-2fcd {
+    position: absolute;
+    width: 140px;
+    height: 94px;
+    left: 64%;
+    top: -245px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+}
+.gwd-div-2fcd::before {
+    width: inherit;
+    height: inherit;
+    content: "";
+    position: absolute;
+    left: 0px;
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    background-color: inherit;
+}
+.gwd-div-2fcd::after {
+    width: inherit;
+    height: inherit;
+    content: "";
+    position: absolute;
+    left: 0px;
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    background-color: inherit;
+}
+@keyframes gwd-gen-fi3jgwdanimation_gwd-keyframes {
+    0% {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+    }
+    100% {
+        transform: rotateZ(-116.48deg);
+        -webkit-transform: rotateZ(-116.48deg);
+        -moz-transform: rotateZ(-116.48deg);
+        animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+    }
+}
+@-webkit-keyframes gwd-gen-fi3jgwdanimation_gwd-keyframes {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+        -webkit-animation-timing-function: linear;
+    }
+    100% {
+        -webkit-transform: rotateZ(-116.48deg);
+        -webkit-animation-timing-function: linear;
+    }
+}
+@-moz-keyframes gwd-gen-fi3jgwdanimation_gwd-keyframes {
+    0% {
+        -moz-transform: rotateZ(0deg);
+        -moz-animation-timing-function: linear;
+    }
+    100% {
+        -moz-transform: rotateZ(-116.48deg);
+        -moz-animation-timing-function: linear;
+    }
+}
+.fluid-anim-cont .gwd-gen-fi3jgwdanimation {
+    animation: gwd-gen-fi3jgwdanimation_gwd-keyframes 2.2s linear 0s infinite normal forwards;
+    -webkit-animation: gwd-gen-fi3jgwdanimation_gwd-keyframes 2.2s linear 0s infinite normal forwards;
+    -moz-animation: gwd-gen-fi3jgwdanimation_gwd-keyframes 2.2s linear 0s infinite normal forwards;
+}
+@keyframes gwd-gen-b5pfgwdanimation_gwd-keyframes {
+    0% {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+    }
+    100% {
+        transform: rotateZ(122.666deg);
+        -webkit-transform: rotateZ(122.666deg);
+        -moz-transform: rotateZ(122.666deg);
+        animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+    }
+}
+@-webkit-keyframes gwd-gen-b5pfgwdanimation_gwd-keyframes {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+        -webkit-animation-timing-function: linear;
+    }
+    100% {
+        -webkit-transform: rotateZ(122.666deg);
+        -webkit-animation-timing-function: linear;
+    }
+}
+@-moz-keyframes gwd-gen-b5pfgwdanimation_gwd-keyframes {
+    0% {
+        -moz-transform: rotateZ(0deg);
+        -moz-animation-timing-function: linear;
+    }
+    100% {
+        -moz-transform: rotateZ(122.666deg);
+        -moz-animation-timing-function: linear;
+    }
+}
+.fluid-anim-cont .gwd-gen-b5pfgwdanimation {
+    animation: gwd-gen-b5pfgwdanimation_gwd-keyframes 2.2s linear 0s infinite normal forwards;
+    -webkit-animation: gwd-gen-b5pfgwdanimation_gwd-keyframes 2.2s linear 0s infinite normal forwards;
+    -moz-animation: gwd-gen-b5pfgwdanimation_gwd-keyframes 2.2s linear 0s infinite normal forwards;
+}
